@@ -17,7 +17,7 @@ body{
     text-align: center;
     font-size: x-large;
 }
-.menu ul li{
+.menu ul li {
     list-style: none;
     display: inline-block;
     text-align: center;
@@ -26,24 +26,34 @@ body{
     position: relative;
 
 }
+.menu ul li label{
+    position: relative;
+}
 .menu ul li a{
     text-decoration: none;
     color: aliceblue;
-    padding: 10px;
+   padding: 10px;
     min-width: 70px;
 }
-.menu>ul ul{
+
+/* .menu>ul li ul{
     display: none;
-}
+} */
 .menu>ul li:hover{
     background-color: rgb(170, 89, 45)
     
 }
-.menu ul li:hover ul{
+.menu ul li input:checked + ul{
     display: initial;
     position: absolute;
     top: 3em;
     left: 0;
 
 }
+.menu ul li input:not(:checked) + ul{
+    display: none;
+}
+.menu ul li ul>li::before{
+   content: '😎';
 
+}
