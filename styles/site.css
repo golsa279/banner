@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    background-color: rgb(103, 161, 184);
+}
+.banner{
+    background-color: rgb(217, 124, 91);
+    color:rgb(0, 0, 0);
+    font-size: xxx-large;
+    padding: 60px;
+    text-align: center;
+    margin: 20px;
+
+}
+.menu ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: x-large;
+}
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    background-color: rgb(67, 121, 143); 
+    padding: 20px;
+    position: relative;
+
+}
+.menu ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px;
+    min-width: 70px;
+}
+.menu>ul ul{
+    display: none;
+}
+.menu>ul li:hover{
+    background-color: rgb(170, 89, 45)
+    
+}
+.menu ul li:hover ul{
+    display: initial;
+    position: absolute;
+    top: 3em;
+    left: 0;
+
+}
+
